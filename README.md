@@ -99,7 +99,7 @@ After completing this notebook, you should be able to:
 - Understand OpenCHAI architecture.
 - Diagnose production issues.
 - Automate infrastructure tasks.
-- Prepare for senior HPC engineering interviews.
+- Prepare for senior HPC Engineering Role.
 
 ---
 
