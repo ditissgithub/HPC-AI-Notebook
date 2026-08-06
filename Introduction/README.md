@@ -49,9 +49,8 @@
 - [4.8 Glossary](#48-glossary)
 - [4.9 Chapter Summary](#49-chapter-summary)
 
-```
-##BONUS!
-```
+> **🎁 BONUS!**
+
 # Part 5 – Advanced HPC Concepts
 
 - [5.1 HPC vs Cloud Computing](#51-hpc-vs-cloud-computing)
