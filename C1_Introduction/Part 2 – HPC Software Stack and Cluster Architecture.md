@@ -1,10 +1,4 @@
----
-
 # Part 2 – HPC Software Stack and Cluster Architecture
-
----
-
-## Table of Contents
 
 - [2.1 HPC Software Stack](#21-hpc-software-stack)
 - [2.2 HPC Job Lifecycle](#22-hpc-job-lifecycle)
