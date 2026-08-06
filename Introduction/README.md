@@ -14,7 +14,7 @@
 - [1.7 Characteristics of an HPC System](#17-characteristics-of-an-hpc-system)
 - [1.8 Real-World Applications of HPC](#18-real-world-applications-of-hpc)
 
-## Part 2 – Evolution to AI Infrastructure HPC Software Stack and Cluster Architectur
+## Part 2 – HPC Software Stack and Cluster Architecture
 
 - [2.1 HPC Software Stack](#21-hpc-software-stack)
 - [2.2 HPC Job Lifecycle](#22-hpc-job-lifecycle)
