@@ -1,5 +1,3 @@
-# SUMMARY
-
 # HPC-AI Infrastructure Engineer Notebook
 
 **Version:** 1.0.0
