@@ -3,8 +3,6 @@
 
 ---
 
-# Table of Contents
-
 - [Learning Objectives](#learning-objectives)
 - [Prerequisites](#prerequisites)
 - [Estimated Reading Time](#estimated-reading-time)
