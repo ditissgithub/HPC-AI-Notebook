@@ -10,17 +10,6 @@
 - [2.8 Inodes](#28-inodes)
 - [2.9 Mount Points](#29-mount-points)
 
-# Prerequisites
-
-- Basic computer architecture
-- Basic command-line familiarity
-- No prior Linux administration experience required
-
----
-
-# Estimated Reading Time
-
-**60–75 Minutes**
 
 ---
 
