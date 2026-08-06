@@ -36,11 +36,29 @@
 - [3.7 InfiniBand Network Fabric](#37-infiniband-network-fabric)
 - [3.8 NVIDIA GPU Computing](#38-nvidia-gpu-computing)
 - [3.9 How Everything Works Together](#39-how-everything-works-together)
-- [Production Insight](#production-insight)
-- [Key Takeaways](#key-takeaways)
 
-## Part 2 – Evolution to AI Infrastructure
+# Part 4 – OpenCHAI Vision, Skills Roadmap, Best Practices, Interview Preparation & Chapter Summary
 
-## Part 3 – Anatomy of an HPC Cluster *(Coming in Part 3)*
+- [4.1 From HPC Clusters to HPC Platforms](#41-from-hpc-clusters-to-hpc-platforms)
+- [4.2 OpenCHAI Vision](#42-openchai-vision)
+- [4.3 Skills Roadmap for an HPC-AI Infrastructure Engineer](#43-skills-roadmap-for-an-hpc-ai-infrastructure-engineer)
+- [4.4 Engineering Mindset](#44-engineering-mindset)
+- [4.5 Best Practices](#45-best-practices)
+- [4.6 Common Beginner Mistakes](#46-common-beginner-mistakes)
+- [4.7 Interview Questions](#47-interview-questions)
+- [4.8 Glossary](#48-glossary)
+- [4.9 Chapter Summary](#49-chapter-summary)
 
-## Part 4 – Role of an HPC Infrastructure Engineer *(Coming in Part 4)*
+```
+##BONUS!
+```
+# Part 5 – Advanced HPC Concepts
+
+- [5.1 HPC vs Cloud Computing](#51-hpc-vs-cloud-computing)
+- [5.2 HPC vs AI Infrastructure](#52-hpc-vs-ai-infrastructure)
+- [5.3 AI Factory Architecture](#53-ai-factory-architecture)
+- [5.4 Complete Anatomy of an HPC Cluster](#54-complete-anatomy-of-an-hpc-cluster)
+- [5.5 End-to-End HPC Workflow](#55-end-to-end-hpc-workflow)
+- [5.6 Control Plane vs Data Plane](#56-control-plane-vs-data-plane)
+- [5.7 Modern HPC Control Plane](#57-modern-hpc-control-plane)
+- [5.8 Final Chapter Summary](#58-final-chapter-summary)
