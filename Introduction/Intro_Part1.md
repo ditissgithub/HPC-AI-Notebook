@@ -1,4 +1,3 @@
-# Chapter 1
 # Introduction to HPC & AI Infrastructure
 
 ---
