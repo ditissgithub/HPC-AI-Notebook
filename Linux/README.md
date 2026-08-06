@@ -21,10 +21,31 @@
 - [2.8 Inodes](#28-inodes)
 - [2.9 Mount Points](#29-mount-points)
 
-## Part 2 – Process & Service Management *(Coming in Part 2)*
+## Part 2 – Process & Service Management 
+
+- [2.10 Process Management](#210-process-management)
+- [2.11 Linux Process States](#211-linux-process-states)
+- [2.12 CPU Scheduling](#212-cpu-scheduling)
+- [2.13 Signals](#213-signals)
+- [2.14 Services](#214-services)
+- [2.15 systemd](#215-systemd)
+- [2.16 systemctl Commands](#216-systemctl-commands)
+- [2.17 Journald](#217-journald)
+- [2.18 Boot Targets](#218-boot-targets)
+- [2.19 Service Troubleshooting Workflow](#219-service-troubleshooting-workflow)
+
 
 ## Part 3 – Performance & Storage *(Coming in Part 3)*
 
+- [2.20 Linux Memory Management](#220-linux-memory-management)
+- [2.21 CPU Scheduling & Performance](#221-cpu-scheduling--performance)
+- [2.22 Disk I/O](#222-disk-io)
+- [2.23 Linux Filesystems](#223-linux-filesystems)
+- [2.24 Logical Volume Manager (LVM)](#224-logical-volume-manager-lvm)
+- [2.25 RAID Fundamentals](#225-raid-fundamentals)
+- [2.26 Swap Memory](#226-swap-memory)
+- [2.27 Performance Monitoring Tools](#227-performance-monitoring-tools)
+- [2.28 Performance Troubleshooting Workflow](#228-performance-troubleshooting-workflow)
 ## Part 4 – Security & Administration *(Coming in Part 4)*
 
 ## Part 5 – Production Operations *(Coming in Part 5)*
