@@ -1,10 +1,4 @@
----
-
 # Part 4 – OpenCHAI Vision, Skills Roadmap, Best Practices, Interview Preparation & Chapter Summary
-
----
-
-# Table of Contents
 
 - [4.1 From HPC Clusters to HPC Platforms](#41-from-hpc-clusters-to-hpc-platforms)
 - [4.2 OpenCHAI Vision](#42-openchai-vision)
