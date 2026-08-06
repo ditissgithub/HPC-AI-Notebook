@@ -28,3 +28,34 @@
 ## Part 4 – Security & Administration *(Coming in Part 4)*
 
 ## Part 5 – Production Operations *(Coming in Part 5)*
+
+---
+
+# Learning Objectives
+
+After completing this part, you should be able to:
+
+- Understand Linux architecture.
+- Explain the role of the Linux kernel.
+- Differentiate User Space and Kernel Space.
+- Understand the Linux boot sequence.
+- Navigate the Linux filesystem hierarchy.
+- Identify Linux file types.
+- Explain how inodes work.
+- Understand mount points and filesystem mounting.
+
+---
+
+# Prerequisites
+
+- Basic computer architecture
+- Basic command-line familiarity
+- No prior Linux administration experience required
+
+---
+
+# Estimated Reading Time
+
+**60–75 Minutes**
+
+---
