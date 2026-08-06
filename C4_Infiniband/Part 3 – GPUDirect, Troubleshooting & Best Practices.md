@@ -1,4 +1,4 @@
-# Part 3 – GPUDirect, Troubleshooting & Best Practices
+## Part 3 – GPUDirect, Troubleshooting & Best Practices
 
 - [4.14 GPUDirect RDMA](#414-gpudirect-rdma)
 - [4.15 Common InfiniBand Problems](#415-common-infiniband-problems)
