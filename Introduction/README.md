@@ -25,7 +25,19 @@
 - [2.7 Network Fabric](#27-network-fabric)
 - [2.8 Putting Everything Together](#28-putting-everything-together)
   
+# Part 3 – Core HPC Technologies
 
+- [3.1 Introduction](#31-introduction)
+- [3.2 Linux](#32-linux)
+- [3.3 xCAT Provisioning](#33-xcat-provisioning)
+- [3.4 Slurm Workload Manager](#34-slurm-workload-manager)
+- [3.5 LDAP Authentication](#35-ldap-authentication)
+- [3.6 Lustre Parallel File System](#36-lustre-parallel-file-system)
+- [3.7 InfiniBand Network Fabric](#37-infiniband-network-fabric)
+- [3.8 NVIDIA GPU Computing](#38-nvidia-gpu-computing)
+- [3.9 How Everything Works Together](#39-how-everything-works-together)
+- [Production Insight](#production-insight)
+- [Key Takeaways](#key-takeaways)
 
 ## Part 2 – Evolution to AI Infrastructure
 
