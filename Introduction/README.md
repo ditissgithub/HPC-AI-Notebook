@@ -3,13 +3,6 @@
 
 ---
 
-# Table of Contents
-
-- [Learning Objectives](#learning-objectives)
-- [Prerequisites](#prerequisites)
-- [Estimated Reading Time](#estimated-reading-time)
-- [Key Takeaways](#key-takeaways)
-
 ## Part 1 – Foundations of High Performance Computing
 
 - [1.1 What is High Performance Computing?](#11-what-is-high-performance-computing)
