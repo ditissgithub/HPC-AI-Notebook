@@ -33,7 +33,7 @@
 - [2.19 Service Troubleshooting Workflow](#219-service-troubleshooting-workflow)
 
 
-## Part 3 – Performance & Storage *(Coming in Part 3)*
+## Part 3 – Performance & Storage 
 
 - [2.20 Linux Memory Management](#220-linux-memory-management)
 - [2.21 CPU Scheduling & Performance](#221-cpu-scheduling--performance)
@@ -44,10 +44,29 @@
 - [2.26 Swap Memory](#226-swap-memory)
 - [2.27 Performance Monitoring Tools](#227-performance-monitoring-tools)
 - [2.28 Performance Troubleshooting Workflow](#228-performance-troubleshooting-workflow)
-## Part 4 – Security & Administration *(Coming in Part 4)*
 
-## Part 5 – Production Operations *(Coming in Part 5)*
+## Part 4 – Security & Administration
 
+- [2.29 Linux User & Group Management](#229-linux-user--group-management)
+- [2.30 File Ownership & Permissions](#230-file-ownership--permissions)
+- [2.31 Access Control Lists (ACL)](#231-access-control-lists-acl)
+- [2.32 SELinux](#232-selinux)
+- [2.33 SSH Administration](#233-ssh-administration)
+- [2.34 Package Management](#234-package-management)
+- [2.35 Log Management](#235-log-management)
+- [2.36 Cron & systemd Timers](#236-cron--systemd-timers)
+- [2.37 Linux Administration Checklist](#237-linux-administration-checklist)
+  
+## Part 5 – Production Operations 
+
+- [2.38 Linux Networking Basics](#238-linux-networking-basics)
+- [2.39 Linux Troubleshooting Methodology](#239-linux-troubleshooting-methodology)
+- [2.40 Production Troubleshooting Scenarios](#240-production-troubleshooting-scenarios)
+- [2.41 HPC Linux Best Practices](#241-hpc-linux-best-practices)
+- [2.42 Essential Linux Commands Cheat Sheet](#242-essential-linux-commands-cheat-sheet)
+- [2.43 Linux Interview Questions](#243-linux-interview-questions)
+- [2.44 Chapter Summary](#244-chapter-summary)
+  
 ---
 
 # Learning Objectives
