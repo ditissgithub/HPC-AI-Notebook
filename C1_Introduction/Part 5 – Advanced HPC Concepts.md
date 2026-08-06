@@ -1,10 +1,4 @@
----
-
 # Part 5 – Advanced HPC Concepts
-
----
-
-# Table of Contents
 
 - [5.1 HPC vs Cloud Computing](#51-hpc-vs-cloud-computing)
 - [5.2 HPC vs AI Infrastructure](#52-hpc-vs-ai-infrastructure)
