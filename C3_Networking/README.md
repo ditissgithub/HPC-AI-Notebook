@@ -3,7 +3,7 @@
 
 ---
 
-## Part 1 – Networking Fundamental sontents
+## Part 1 – Networking Fundamental 
 
 - [3.1 Why Networking Matters in HPC](#31-why-networking-matters-in-hpc)
 - [3.2 What is a Computer Network?](#32-what-is-a-computer-network)
