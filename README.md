@@ -4,7 +4,7 @@
 
 **Author:** Satish Gupta
 
-**Organization:** C-DAC, HPC Technologies
+**Organization:** HPC-AI World
 
 ---
 
