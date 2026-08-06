@@ -1,4 +1,3 @@
-# Chapter 3
 # Networking for HPC-AI Infrastructure Engineers
 
 ---
@@ -66,14 +65,3 @@ Part 5
 ✓ Summary
 
 ---
-
-Estimated Chapter Size
-
-Part 1 → ~8–10 pages
-Part 2 → ~8 pages
-Part 3 → ~8 pages
-Part 4 → ~8 pages
-Part 5 → ~6 pages
-
-Total:
-≈38–42 pages
