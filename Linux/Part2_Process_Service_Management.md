@@ -1,10 +1,4 @@
----
-
 # Part 2 – Process & Service Management
-
----
-
-# Table of Contents
 
 - [2.10 Process Management](#210-process-management)
 - [2.11 Linux Process States](#211-linux-process-states)
