@@ -1,10 +1,4 @@
----
-
 # Part 4 – Security & Administration
-
----
-
-# Table of Contents
 
 - [2.29 Linux User & Group Management](#229-linux-user--group-management)
 - [2.30 File Ownership & Permissions](#230-file-ownership--permissions)
