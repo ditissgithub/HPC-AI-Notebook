@@ -11,12 +11,6 @@
 - [2.9 Mount Points](#29-mount-points)
 
 
----
-
-# Part 1 – Linux Foundations
-
----
-
 # 2.1 Introduction to Linux
 
 ## What is Linux?
