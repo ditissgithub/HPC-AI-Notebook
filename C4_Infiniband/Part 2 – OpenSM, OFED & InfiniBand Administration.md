@@ -1,4 +1,4 @@
-# Part 2 – OpenSM, OFED & InfiniBand Administration
+## Part 2 – OpenSM, OFED & InfiniBand Administration
 
 - [4.8 OpenSM (Subnet Manager)](#48-opensm-subnet-manager)
 - [4.9 Mellanox OFED](#49-mellanox-ofed)
