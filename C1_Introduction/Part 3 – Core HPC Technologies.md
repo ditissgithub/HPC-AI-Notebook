@@ -1,10 +1,4 @@
----
-
 # Part 3 – Core HPC Technologies
-
----
-
-## Table of Contents
 
 - [3.1 Introduction](#31-introduction)
 - [3.2 Linux](#32-linux)
