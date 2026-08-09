@@ -34,3 +34,21 @@
 * [17.23 Slurm Controller Troubleshooting](#1723-slurm-controller-troubleshooting)
 * [17.24 Production Recovery Workflow](#1724-production-recovery-workflow)
 * [17.25 Quick Revision](#1725-quick-revision)
+
+## Part 3 – Network, InfiniBand, GPU & Lustre Troubleshooting
+
+> **Notebook focus:** Concise troubleshooting patterns for the hardware and infrastructure layers most commonly involved in HPC-AI production incidents.
+
+* [17.26 Network Troubleshooting](#1726-network-troubleshooting)
+* [17.27 Interface Down](#1727-interface-down)
+* [17.28 Connectivity Problems](#1728-connectivity-problems)
+* [17.29 MTU Problems](#1729-mtu-problems)
+* [17.30 InfiniBand Troubleshooting](#1730-infiniband-troubleshooting)
+* [17.31 RDMA Troubleshooting](#1731-rdma-troubleshooting)
+* [17.32 NVIDIA GPU Troubleshooting](#1732-nvidia-gpu-troubleshooting)
+* [17.33 GPU Driver Problems](#1733-gpu-driver-problems)
+* [17.34 Slurm GPU Problems](#1734-slurm-gpu-problems)
+* [17.35 Lustre Troubleshooting](#1735-lustre-troubleshooting)
+* [17.36 Lustre Quota Problems](#1736-lustre-quota-problems)
+* [17.37 Production Diagnostic Matrix](#1737-production-diagnostic-matrix)
+* [17.38 Quick Revision](#1738-quick-revision)
