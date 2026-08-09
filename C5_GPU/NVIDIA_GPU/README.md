@@ -1,9 +1,8 @@
 ---
 # Chapter 5 – NVIDIA GPU
-## Part 1 – NVIDIA GPU Fundamentals
 ---
 
-# Table of Contents
+## Part 1 – NVIDIA GPU Fundamentals
 
 - [5.1 Why GPUs are Important in HPC & AI](#51-why-gpus-are-important-in-hpc--ai)
 - [5.2 What is a GPU?](#52-what-is-a-gpu)
@@ -14,4 +13,14 @@
 - [5.7 GPU Servers in HPC](#57-gpu-servers-in-hpc)
 - [Key Takeaways](#key-takeaways)
 
----
+## Part 2 – NVIDIA Driver, CUDA & GPU Administration
+
+- [5.8 NVIDIA Driver](#58-nvidia-driver)
+- [5.9 CUDA Toolkit](#59-cuda-toolkit)
+- [5.10 Driver vs CUDA Toolkit](#510-driver-vs-cuda-toolkit)
+- [5.11 nvidia-smi](#511-nvidia-smi)
+- [5.12 NVIDIA Management Library (NVML)](#512-nvidia-management-library-nvml)
+- [5.13 GPU Monitoring](#513-gpu-monitoring)
+- [5.14 GPU Health Checks](#514-gpu-health-checks)
+- [5.15 Essential GPU Commands](#515-essential-gpu-commands)
+- [Key Takeaways](#key-takeaways)
