@@ -50,3 +50,42 @@
 * [6.45 Real HPC Provisioning Example](#645-real-hpc-provisioning-example)
 * [6.46 Production Best Practices](#646-production-best-practices)
 * [6.47 Troubleshooting Scenarios](#647-troubleshooting-scenarios)
+
+## Part 4 – Database, Services, Node Lifecycle & Production Operations
+
+* [6.50 xCAT Database Architecture](#650-xcat-database-architecture)
+* [6.51 Important xCAT Tables](#651-important-xcat-tables)
+* [6.52 Node and Network Relationships](#652-node-and-network-relationships)
+* [6.53 Site and Global Configuration](#653-site-and-global-configuration)
+* [6.54 xCAT Service Architecture](#654-xcat-service-architecture)
+* [6.55 DHCP and DNS Generation](#655-dhcp-and-dns-generation)
+* [6.56 Production xCAT Commands](#656-production-xcat-commands)
+* [6.57 Node Lifecycle Management](#657-node-lifecycle-management)
+* [6.58 Power Management](#658-power-management)
+* [6.59 Remote Console Management](#659-remote-console-management)
+* [6.60 Cluster Scaling](#660-cluster-scaling)
+* [6.61 xCAT High Availability](#661-xcat-high-availability)
+* [6.62 Production Scenario – Adding a Node](#662-production-scenario--adding-a-node)
+* [6.63 Production Scenario – Rebuilding a Node](#663-production-scenario--rebuilding-a-node)
+* [6.64 Production Scenario – Removing a Node](#664-production-scenario--removing-a-node)
+* [6.65 Troubleshooting Workflow](#665-troubleshooting-workflow)
+
+  ## Part 5 – Production Operations
+
+* [6.69 xCAT in a Production HPC Workflow](#669-xcat-in-a-production-hpc-workflow)
+* [6.70 Adding a New Compute Node](#670-adding-a-new-compute-node)
+* [6.71 GPU Node Provisioning](#671-gpu-node-provisioning)
+* [6.72 xCAT + Ansible](#672-xcat--ansible)
+* [6.73 xCAT + Slurm](#673-xcat--slurm)
+* [6.74 Configuration Drift](#674-configuration-drift)
+* [6.75 Backup & Recovery](#675-backup--recovery)
+
+## Part 6 – Troubleshooting & Quick Revision
+
+* [6.76 xCAT Troubleshooting Flow](#676-xcat-troubleshooting-flow)
+* [6.77 Essential xCAT Commands](#677-essential-xcat-commands)
+* [6.78 xCAT Quick Architecture](#678-xcat-quick-architecture)
+* [6.79 xCAT Interview Questions](#679-xcat-interview-questions)
+* [6.80 HPC-AI Engineer Perspective](#680-hpc-ai-engineer-perspective)
+* [6.81 Chapter 6 – Final Revision](#681-chapter-6--final-revision)
+* [Chapter 6 Checklist](#chapter-6-checklist)
