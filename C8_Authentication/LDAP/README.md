@@ -48,3 +48,9 @@
 * [8.32 LDAP Interview Questions](#832-ldap-interview-questions)
 * [8.33 Essential LDAP Commands](#833-essential-ldap-commands)
 * [8.34 Chapter 8 Final Revision](#834-chapter-8-final-revision)
+
+## Part 4 – OpenLDAP Password Policy (ppolicy)
+
+> **Notebook focus:** Understand the OpenLDAP Password Policy overlay and the operational controls commonly used in production HPC environments.
+
+# 8.35 OpenLDAP ppolicy
