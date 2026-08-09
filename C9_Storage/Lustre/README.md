@@ -29,3 +29,18 @@
 * [9.18 Common Performance Problems](#918-common-performance-problems)
 * [9.19 Important Commands](#919-important-commands)
 * [9.20 Quick Revision](#920-quick-revision)
+
+## Part 3 – Quotas, Administration & Troubleshooting
+
+> **Notebook focus:** Manage user/group quotas on Lustre and troubleshoot common capacity and access problems.
+
+* [9.21 Lustre Quotas](#921-lustre-quotas)
+* [9.22 User Quota on Home](#922-user-quota-on-home)
+* [9.23 User Quota on Scratch](#923-user-quota-on-scratch)
+* [9.24 Soft and Hard Limits](#924-soft-and-hard-limits)
+* [9.25 Verify Quotas](#925-verify-quotas)
+* [9.26 Group Quotas](#926-group-quotas)
+* [9.27 Quota Troubleshooting](#927-quota-troubleshooting)
+* [9.28 Production Quota Example](#928-production-quota-example)
+* [9.29 Important Commands](#929-important-commands)
+* [9.30 Quick Revision](#930-quick-revision)
