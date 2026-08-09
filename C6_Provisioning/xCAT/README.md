@@ -33,3 +33,20 @@
 * [6.29 Production Deployment Workflow](#629-production-deployment-workflow)
 * [6.30 Troubleshooting Checklist](#630-troubleshooting-checklist)
 
+## Part 3 – OS Images, Stateful/Stateless Provisioning & Post-Install Configuration
+
+* [6.33 OS Image Management](#633-os-image-management)
+* [6.34 Golden Image Concept](#634-golden-image-concept)
+* [6.35 Stateful Provisioning](#635-stateful-provisioning)
+* [6.36 Stateless Provisioning](#636-stateless-provisioning)
+* [6.37 Stateful vs Stateless in HPC](#637-stateful-vs-stateless-in-hpc)
+* [6.38 Linux Installation Workflow](#638-linux-installation-workflow)
+* [6.39 Kickstart-Based Installation](#639-kickstart-based-installation)
+* [6.40 Post-Install Configuration](#640-post-install-configuration)
+* [6.41 xCAT + Ansible](#641-xcat--ansible)
+* [6.42 xCAT + Slurm](#642-xcat--slurm)
+* [6.43 GPU Node Provisioning](#643-gpu-node-provisioning)
+* [6.44 InfiniBand Node Provisioning](#644-infiniband-node-provisioning)
+* [6.45 Real HPC Provisioning Example](#645-real-hpc-provisioning-example)
+* [6.46 Production Best Practices](#646-production-best-practices)
+* [6.47 Troubleshooting Scenarios](#647-troubleshooting-scenarios)
