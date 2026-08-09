@@ -1,7 +1,6 @@
 # Chapter 6 – xCAT
-## Part 1 – xCAT Architecture & Core Concepts
 
----
+## Part 1 – xCAT Architecture & Core Concepts
 
 - [6.1 What is xCAT?](#61-what-is-xcat)
 - [6.2 Why xCAT is Used in HPC](#62-why-xcat-is-used-in-hpc)
@@ -17,4 +16,5 @@
 - [6.12 Interview Questions](#612-interview-questions)
 - [6.13 Part 1 Summary](#613-part-1-summary)
 
----
+
+
