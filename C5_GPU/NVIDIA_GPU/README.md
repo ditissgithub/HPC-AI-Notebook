@@ -24,3 +24,16 @@
 - [5.14 GPU Health Checks](#514-gpu-health-checks)
 - [5.15 Essential GPU Commands](#515-essential-gpu-commands)
 - [Key Takeaways](#key-takeaways)
+
+## Part 3 – MIG, GPU Scheduling, Troubleshooting & Best Practices
+
+- [5.16 Multi-Instance GPU (MIG)](#516-multi-instance-gpu-mig)
+- [5.17 GPU Scheduling with Slurm](#517-gpu-scheduling-with-slurm)
+- [5.18 GPU Allocation](#518-gpu-allocation)
+- [5.19 NVIDIA GPU Containers](#519-nvidia-gpu-containers)
+- [5.20 Common GPU Problems](#520-common-gpu-problems)
+- [5.21 Production GPU Troubleshooting](#521-production-gpu-troubleshooting)
+- [5.22 GPU Best Practices](#522-gpu-best-practices)
+- [5.23 Interview Questions](#523-interview-questions)
+- [5.24 GPU Command Cheat Sheet](#524-gpu-command-cheat-sheet)
+- [5.25 Chapter Summary](#525-chapter-summary)
