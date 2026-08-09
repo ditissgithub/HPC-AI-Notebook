@@ -53,4 +53,4 @@
 
 > **Notebook focus:** Understand the OpenLDAP Password Policy overlay and the operational controls commonly used in production HPC environments.
 
-# 8.35 OpenLDAP ppolicy
+* [8.35 OpenLDAP ppolicy]
