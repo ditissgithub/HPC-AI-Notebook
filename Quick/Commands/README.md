@@ -33,3 +33,18 @@
 * [16.22 Quick HPC Health Check](#1622-quick-hpc-health-check)
 * [16.23 Quick Revision](#1623-quick-revision)
 
+## Part 3 – Automation, Remote Operations & Command Patterns
+
+> **Notebook focus:** Combine Linux and HPC commands into repeatable operational checks instead of running isolated commands manually.
+
+* [16.24 Remote Operations](#1624-remote-operations)
+* [16.25 SSH Operations](#1625-ssh-operations)
+* [16.26 Parallel Node Checks](#1626-parallel-node-checks)
+* [16.27 Command Chaining](#1627-command-chaining)
+* [16.28 Pipes and Filters](#1628-pipes-and-filters)
+* [16.29 Useful AWK Patterns](#1629-useful-awk-patterns)
+* [16.30 Useful Grep Patterns](#1630-useful-grep-patterns)
+* [16.31 Finding HPC Problems Quickly](#1631-finding-hpc-problems-quickly)
+* [16.32 Basic Health-Check Script](#1632-basic-health-check-script)
+* [16.33 Production Command Discipline](#1633-production-command-discipline)
+* [16.34 Quick Revision](#1634-quick-revision)
