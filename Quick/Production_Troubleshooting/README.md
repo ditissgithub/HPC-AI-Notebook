@@ -17,3 +17,20 @@
 * [17.11 Production Checklist](#1711-production-checklist)
 * [17.12 Quick Revision](#1712-quick-revision)
 
+## Part 2 – Slurm, Node & Job Troubleshooting
+
+> **Notebook focus:** Quickly diagnose common production problems involving Slurm controllers, compute nodes, jobs, partitions, QoS and node states.
+
+* [17.13 Slurm Troubleshooting Model](#1713-slurm-troubleshooting-model)
+* [17.14 Node Down or Drain](#1714-node-down-or-drain)
+* [17.15 slurmd Not Running](#1715-slurmd-not-running)
+* [17.16 Node Not Registering](#1716-node-not-registering)
+* [17.17 Job Pending](#1717-job-pending)
+* [17.18 Job Failed](#1718-job-failed)
+* [17.19 Job Out of Memory](#1719-job-out-of-memory)
+* [17.20 Job Timeout](#1720-job-timeout)
+* [17.21 Partition Problems](#1721-partition-problems)
+* [17.22 QoS and Account Problems](#1722-qos-and-account-problems)
+* [17.23 Slurm Controller Troubleshooting](#1723-slurm-controller-troubleshooting)
+* [17.24 Production Recovery Workflow](#1724-production-recovery-workflow)
+* [17.25 Quick Revision](#1725-quick-revision)
