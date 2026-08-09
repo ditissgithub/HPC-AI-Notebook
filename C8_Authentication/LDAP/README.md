@@ -32,3 +32,19 @@
 * [8.21 Authentication Troubleshooting Workflow](#821-authentication-troubleshooting-workflow)
 * [8.22 Part 2 Quick Revision](#822-part-2-quick-revision)
 
+## Part 3 – Production Operations, Troubleshooting & Interview Revision
+
+> **Notebook focus:** Practical LDAP/SSSD operations for a production HPC cluster.
+
+* [8.23 LDAP Production Architecture](#823-ldap-production-architecture)
+* [8.24 LDAP High Availability](#824-ldap-high-availability)
+* [8.25 SSSD Cache and Offline Authentication](#825-sssd-cache-and-offline-authentication)
+* [8.26 Common LDAP Problems](#826-common-ldap-problems)
+* [8.27 Common SSSD Problems](#827-common-sssd-problems)
+* [8.28 UID/GID Mismatch Scenario](#828-uidgid-mismatch-scenario)
+* [8.29 LDAP Replication Troubleshooting](#829-ldap-replication-troubleshooting)
+* [8.30 HPC Authentication Troubleshooting Workflow](#830-hpc-authentication-troubleshooting-workflow)
+* [8.31 Production Best Practices](#831-production-best-practices)
+* [8.32 LDAP Interview Questions](#832-ldap-interview-questions)
+* [8.33 Essential LDAP Commands](#833-essential-ldap-commands)
+* [8.34 Chapter 8 Final Revision](#834-chapter-8-final-revision)
