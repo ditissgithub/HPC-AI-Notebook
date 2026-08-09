@@ -48,3 +48,18 @@
 * [16.32 Basic Health-Check Script](#1632-basic-health-check-script)
 * [16.33 Production Command Discipline](#1633-production-command-discipline)
 * [16.34 Quick Revision](#1634-quick-revision)
+
+## Part 4 – Command Cheat Sheet & HPC Diagnostic Patterns
+
+> **Notebook focus:** A compact daily-reference section for Linux, Slurm, networking, InfiniBand, GPU, Lustre, xCAT and LDAP operations.
+
+* [16.35 Linux Quick Reference](#1635-linux-quick-reference)
+* [16.36 Network Quick Reference](#1636-network-quick-reference)
+* [16.37 Slurm Quick Reference](#1637-slurm-quick-reference)
+* [16.38 InfiniBand Quick Reference](#1638-infiniband-quick-reference)
+* [16.39 NVIDIA GPU Quick Reference](#1639-nvidia-gpu-quick-reference)
+* [16.40 Lustre Quick Reference](#1640-lustre-quick-reference)
+* [16.41 xCAT Quick Reference](#1641-xcat-quick-reference)
+* [16.42 LDAP/SSSD Quick Reference](#1642-ldapsssd-quick-reference)
+* [16.43 Common Diagnostic Patterns](#1643-common-diagnostic-patterns)
+* [16.44 Final Daily Checklist](#1644-final-daily-checklist)
