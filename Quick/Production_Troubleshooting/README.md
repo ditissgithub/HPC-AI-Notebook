@@ -52,37 +52,3 @@
 * [17.36 Lustre Quota Problems](#1736-lustre-quota-problems)
 * [17.37 Production Diagnostic Matrix](#1737-production-diagnostic-matrix)
 * [17.38 Quick Revision](#1738-quick-revision)
-
-## Part 4 – Authentication, xCAT, Cluster-Wide Failures & Incident Handling
-
-> **Notebook focus:** Concise production troubleshooting for LDAP/SSSD, xCAT provisioning, multi-node failures and safe incident handling.
-
-* [17.39 LDAP and SSSD Troubleshooting](#1739-ldap-and-sssd-troubleshooting)
-* [17.40 Authentication Failure Flow](#1740-authentication-failure-flow)
-* [17.41 SSH Login Problems](#1741-ssh-login-problems)
-* [17.42 xCAT Provisioning Troubleshooting](#1742-xcat-provisioning-troubleshooting)
-* [17.43 PXE and DHCP Problems](#1743-pxe-and-dhcp-problems)
-* [17.44 Node Provisioning Failure](#1744-node-provisioning-failure)
-* [17.45 Cluster-Wide Failure](#1745-cluster-wide-failure)
-* [17.46 Recent Change Analysis](#1746-recent-change-analysis)
-* [17.47 Incident Handling](#1747-incident-handling)
-* [17.48 Root Cause Analysis](#1748-root-cause-analysis)
-* [17.49 Production Recovery Checklist](#1749-production-recovery-checklist)
-* [17.50 Quick Revision](#1750-quick-revision)
-
-## Part 5 – Advanced HPC-AI Troubleshooting & Final Checklist
-
-> **Notebook focus:** Concise troubleshooting patterns for distributed workloads, performance degradation, cross-layer failures, and production recovery.
-
-* [17.51 Performance Degradation](#1751-performance-degradation)
-* [17.52 Slow HPC Job](#1752-slow-hpc-job)
-* [17.53 MPI Job Failure](#1753-mpi-job-failure)
-* [17.54 GPU Performance Problem](#1754-gpu-performance-problem)
-* [17.55 Network Performance Problem](#1755-network-performance-problem)
-* [17.56 Lustre Performance Problem](#1756-lustre-performance-problem)
-* [17.57 Multi-Node Failure Correlation](#1757-multi-node-failure-correlation)
-* [17.58 Configuration Drift](#1758-configuration-drift)
-* [17.59 Safe Production Changes](#1759-safe-production-changes)
-* [17.60 Final Troubleshooting Checklist](#1760-final-troubleshooting-checklist)
-* [17.61 Chapter 17 Quick Revision](#1761-chapter-17-quick-revision)
-
