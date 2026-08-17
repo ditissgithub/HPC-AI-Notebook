@@ -565,7 +565,7 @@ journalctl -u <service>
 dmesg -T
 ```
 # Structure
-![Flow Diagram](images/Node_Bottleneck.png)
+![Flow Diagram](../../images/Node_Bottleneck.png)
 
 
 > **HPC Engineer rule:** Never confuse **symptom** with **root cause**. A failed Slurm job, for example, may ultimately be caused by Linux memory pressure, Lustre I/O, InfiniBand connectivity, a GPU driver, or a node configuration problem.
