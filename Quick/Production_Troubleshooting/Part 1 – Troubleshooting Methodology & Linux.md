@@ -14,7 +14,7 @@
 * [17.10 Kernel Problems](#1710-kernel-problems)
 * [17.11 Production Checklist](#1711-production-checklist)
 * [17.12 Quick Revision](#1712-quick-revision)
-* [Bonus! HPC Performance Troubleshooting](#Structure)
+* [Bonus! HPC Performance Troubleshooting](#HPC-Performance-Troubleshooting-Right-Structure)
 
 ---
 
@@ -564,7 +564,8 @@ systemctl status <service>
 journalctl -u <service>
 dmesg -T
 ```
-# Structure
+# HPC Performance Troubleshooting Right Structure
+
 ![Flow Diagram](../../images/Node_Bottleneck.png)
 
 
