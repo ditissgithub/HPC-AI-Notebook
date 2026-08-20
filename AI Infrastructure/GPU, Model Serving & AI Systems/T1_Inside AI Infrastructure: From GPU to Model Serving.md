@@ -503,3 +503,5 @@ Possible bottlenecks can still exist in:
 ## 17. One-Line Summary
 
 > **AI infrastructure transforms trained model files into a reliable, scalable service by combining GPU compute, high-bandwidth memory, high-speed interconnects, software runtimes, orchestration, and production operations.**
+
+![Flow Diagram](../images/From-GPU-to-Model_server.png)
