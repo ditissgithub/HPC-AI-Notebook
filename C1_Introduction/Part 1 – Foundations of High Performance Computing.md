@@ -1,14 +1,13 @@
 ## Part 1 – Foundations of High Performance Computing
 
-- [1.1 What is High Performance Computing?](#11-what-is-high-performance-computing)
-- [1.2 Why Does HPC Exist?](#12-why-does-hpc-exist)
-- [1.3 Evolution of Computing](#13-evolution-of-computing)
-- [1.4 Parallel Computing](#14-parallel-computing)
-- [1.5 Distributed Computing](#15-distributed-computing)
-- [1.6 Vertical vs Horizontal Scaling](#16-vertical-vs-horizontal-scaling)
-- [1.7 Characteristics of an HPC System](#17-characteristics-of-an-hpc-system)
-- [1.8 Real-World Applications of HPC](#18-real-world-applications-of-hpc)
-
+* [1.1 What is High Performance Computing?](#11-what-is-high-performance-computing)
+* [1.2 Why Does HPC Exist?](#12-why-does-hpc-exist)
+* [1.3 Evolution of Computing](#13-evolution-of-computing)
+* [1.4 Parallel Computing](#14-parallel-computing)
+* [1.5 Distributed Computing](#15-distributed-computing)
+* [1.6 Vertical vs Horizontal Scaling](#16-vertical-vs-horizontal-scaling)
+* [1.7 Characteristics of an HPC System](#17-characteristics-of-an-hpc-system)
+* [1.8 Real-World Applications of HPC](#18-real-world-applications-of-hpc)
 
 # 1.1 What is High Performance Computing?
 
@@ -32,12 +31,23 @@ Think of a construction project.
 
 One engineer attempts to build an entire bridge alone.
 
-```
-Engineer
+```mermaid
+flowchart LR
 
-↓
+    E["Engineer"]
+    W["Design + Planning"]
+    B["Complete Bridge"]
 
-Bridge
+    E --> W
+    W --> B
+
+    classDef person fill:#E0F2FE,stroke:#0284C7,color:#082F49,stroke-width:2px
+    classDef work fill:#FFF7ED,stroke:#EA580C,color:#431407,stroke-width:2px
+    classDef result fill:#DCFCE7,stroke:#16A34A,color:#14532D,stroke-width:2px
+
+    class E person
+    class W work
+    class B result
 ```
 
 The work is sequential and slow.
@@ -48,20 +58,30 @@ The work is sequential and slow.
 
 A complete engineering team works simultaneously.
 
-```
-Architect
+```mermaid
+flowchart TB
 
-Structural Team
+    subgraph TEAM["Engineering Team"]
+        A["Architect"]
+        S["Structural"]
+        C["Civil"]
+        EL["Electrical"]
+        M["Mechanical"]
+    end
 
-Civil Team
+    BRIDGE["Bridge<br/>Completed"]
 
-Electrical Team
+    A --> BRIDGE
+    S --> BRIDGE
+    C --> BRIDGE
+    EL --> BRIDGE
+    M --> BRIDGE
 
-Mechanical Team
+    classDef team fill:#E8F1FF,stroke:#2563EB,color:#172554,stroke-width:2px
+    classDef result fill:#DCFCE7,stroke:#16A34A,color:#14532D,stroke-width:2px
 
-↓
-
-Bridge Completed
+    class A,S,C,EL,M team
+    class BRIDGE result
 ```
 
 Every team works in parallel, dramatically reducing the overall completion time.
@@ -76,15 +96,36 @@ An HPC cluster should not be viewed as hundreds of independent servers.
 
 Instead, think of it as **one giant computer** built from many smaller computers.
 
-```
-          +----------------------------------+
-          |        HPC Cluster               |
-          |                                  |
-          |  Node1  Node2  Node3  NodeN      |
-          |                                  |
-          +----------------------------------+
+```mermaid
+flowchart TB
 
-        Behaves as One Computing Platform
+    subgraph HPC["HPC Cluster — One Computing Platform"]
+        direction LR
+
+        N1["Node 01"]
+        N2["Node 02"]
+        N3["Node 03"]
+        N4["Node N"]
+
+        FABRIC["High-Speed<br/>Interconnect"]
+
+        N1 <--> FABRIC
+        N2 <--> FABRIC
+        N3 <--> FABRIC
+        N4 <--> FABRIC
+    end
+
+    PLATFORM["Logical HPC<br/>Computing Platform"]
+
+    FABRIC --> PLATFORM
+
+    classDef node fill:#EDE9FE,stroke:#7C3AED,color:#2E1065,stroke-width:2px
+    classDef fabric fill:#FCE7F3,stroke:#DB2777,color:#500724,stroke-width:2px
+    classDef platform fill:#DCFCE7,stroke:#16A34A,color:#14532D,stroke-width:2px
+
+    class N1,N2,N3,N4 node
+    class FABRIC fabric
+    class PLATFORM platform
 ```
 
 Users typically interact with the cluster as though it were a single system, while the scheduler and infrastructure distribute work across many compute nodes.
@@ -99,20 +140,20 @@ As scientific and engineering challenges grew more complex, a single server was 
 
 Consider the following examples:
 
-- Simulating global weather patterns
-- Training a large language model (LLM)
-- Genome sequencing
-- Drug discovery
-- Computational Fluid Dynamics (CFD)
-- Earthquake simulation
-- Financial risk analysis
+* Simulating global weather patterns
+* Training a large language model (LLM)
+* Genome sequencing
+* Drug discovery
+* Computational Fluid Dynamics (CFD)
+* Earthquake simulation
+* Financial risk analysis
 
 These workloads require:
 
-- Trillions of calculations
-- Terabytes of memory
-- Massive datasets
-- Fast communication between processors
+* Trillions of calculations
+* Terabytes of memory
+* Massive datasets
+* Fast communication between processors
 
 A single machine eventually reaches physical and economic limits.
 
@@ -122,28 +163,44 @@ A single machine eventually reaches physical and economic limits.
 
 Instead of building one infinitely large server, engineers connect many servers into a cluster.
 
-```
-        Server 1
+```mermaid
+flowchart LR
 
-        Server 2
+    subgraph RESOURCES["Distributed Resources"]
+        S1["Server 01"]
+        S2["Server 02"]
+        S3["Server 03"]
+        S4["Server 04"]
+    end
 
-        Server 3
+    FABRIC["High-Speed<br/>Interconnect"]
 
-        Server 4
+    CLUSTER["Unified<br/>HPC Cluster"]
 
-↓
+    S1 <--> FABRIC
+    S2 <--> FABRIC
+    S3 <--> FABRIC
+    S4 <--> FABRIC
 
-One HPC Cluster
+    FABRIC --> CLUSTER
+
+    classDef server fill:#E8F1FF,stroke:#2563EB,color:#172554,stroke-width:2px
+    classDef fabric fill:#FCE7F3,stroke:#DB2777,color:#500724,stroke-width:2px
+    classDef cluster fill:#DCFCE7,stroke:#16A34A,color:#14532D,stroke-width:2px
+
+    class S1,S2,S3,S4 server
+    class FABRIC fabric
+    class CLUSTER cluster
 ```
 
 Each server contributes CPU cores, memory, storage, and network bandwidth to the overall platform.
 
 This approach provides:
 
-- Higher performance
-- Better scalability
-- Fault isolation
-- More efficient resource utilization
+* Higher performance
+* Better scalability
+* Fault isolation
+* More efficient resource utilization
 
 ---
 
@@ -151,26 +208,35 @@ This approach provides:
 
 Computing has evolved in response to increasing computational demands.
 
-```
-Personal Computer
-        │
-        ▼
-Department Server
-        │
-        ▼
-Multi-Core Server
-        │
-        ▼
-Cluster Computing
-        │
-        ▼
-High Performance Computing
-        │
-        ▼
-GPU-Accelerated HPC
-        │
-        ▼
-AI Infrastructure
+```mermaid
+flowchart LR
+
+    PC["Personal<br/>Computer"]
+    DS["Department<br/>Server"]
+    MC["Multi-Core<br/>Server"]
+    CC["Cluster<br/>Computing"]
+    HPC["High Performance<br/>Computing"]
+    GPU["GPU-Accelerated<br/>HPC"]
+    AI["AI<br/>Infrastructure"]
+
+    PC --> DS
+    DS --> MC
+    MC --> CC
+    CC --> HPC
+    HPC --> GPU
+    GPU --> AI
+
+    classDef early fill:#E0F2FE,stroke:#0284C7,color:#082F49,stroke-width:2px
+    classDef scale fill:#E8F1FF,stroke:#2563EB,color:#172554,stroke-width:2px
+    classDef hpc fill:#EDE9FE,stroke:#7C3AED,color:#2E1065,stroke-width:2px
+    classDef gpu fill:#FEF3C7,stroke:#D97706,color:#451A03,stroke-width:2px
+    classDef ai fill:#DCFCE7,stroke:#16A34A,color:#14532D,stroke-width:2px
+
+    class PC,DS early
+    class MC,CC scale
+    class HPC hpc
+    class GPU gpu
+    class AI ai
 ```
 
 Each stage represents a shift toward greater parallelism and larger-scale resource sharing.
@@ -183,10 +249,10 @@ As processors became faster, simply increasing clock speeds was no longer practi
 
 The industry responded by:
 
-- Adding more CPU cores.
-- Deploying multiple servers.
-- Introducing high-speed interconnects.
-- Leveraging GPUs for massively parallel workloads.
+* Adding more CPU cores.
+* Deploying multiple servers.
+* Introducing high-speed interconnects.
+* Leveraging GPUs for massively parallel workloads.
 
 Modern AI infrastructure is the latest stage of this evolution.
 
@@ -200,36 +266,53 @@ Parallel computing divides a large problem into multiple smaller tasks that exec
 
 Instead of processing one task after another:
 
-```
-Task A
+```mermaid
+flowchart LR
 
-↓
+    A["Task A"]
+    B["Task B"]
+    C["Task C"]
+    D["Task D"]
 
-Task B
+    A --> B --> C --> D
 
-↓
-
-Task C
-
-↓
-
-Task D
+    classDef task fill:#F1F5F9,stroke:#64748B,color:#0F172A,stroke-width:2px
+    class A,B,C,D task
 ```
 
 the tasks execute concurrently:
 
-```
-Task A
+```mermaid
+flowchart TB
 
-Task B
+    PROBLEM["Large Problem"]
 
-Task C
+    subgraph TASKS["Independent / Coordinated Tasks"]
+        A["Task A"]
+        B["Task B"]
+        C["Task C"]
+        D["Task D"]
+    end
 
-Task D
+    RESULT["Combined Result"]
 
-↓
+    PROBLEM --> A
+    PROBLEM --> B
+    PROBLEM --> C
+    PROBLEM --> D
 
-Combined Result
+    A --> RESULT
+    B --> RESULT
+    C --> RESULT
+    D --> RESULT
+
+    classDef problem fill:#E0F2FE,stroke:#0284C7,color:#082F49,stroke-width:2px
+    classDef task fill:#EDE9FE,stroke:#7C3AED,color:#2E1065,stroke-width:2px
+    classDef result fill:#DCFCE7,stroke:#16A34A,color:#14532D,stroke-width:2px
+
+    class PROBLEM problem
+    class A,B,C,D task
+    class RESULT result
 ```
 
 This significantly reduces execution time when the problem can be decomposed into independent or coordinated subtasks.
@@ -242,30 +325,75 @@ Imagine grading 1,000 exam papers.
 
 ### Sequential
 
-```
-Teacher
+```mermaid
+flowchart LR
 
-↓
+    T["Teacher"]
+    P["1,000 Papers"]
+    TIME["~10 Hours"]
 
-1000 Papers
+    T --> P --> TIME
 
-↓
+    classDef person fill:#E0F2FE,stroke:#0284C7,color:#082F49,stroke-width:2px
+    classDef work fill:#FFF7ED,stroke:#EA580C,color:#431407,stroke-width:2px
+    classDef time fill:#FDECEC,stroke:#DC2626,color:#450A0A,stroke-width:2px
 
-10 Hours
+    class T person
+    class P work
+    class TIME time
 ```
 
 ### Parallel
 
-```
-10 Teachers
+```mermaid
+flowchart TB
 
-↓
+    PAPERS["1,000 Papers"]
 
-100 Papers Each
+    subgraph TEACHERS["Parallel Work"]
+        T1["Teacher 01<br/>100 Papers"]
+        T2["Teacher 02<br/>100 Papers"]
+        T3["Teacher 03<br/>100 Papers"]
+        T4["Teacher 04<br/>100 Papers"]
+        T5["Teacher 05<br/>100 Papers"]
+        T6["Teacher 06<br/>100 Papers"]
+        T7["Teacher 07<br/>100 Papers"]
+        T8["Teacher 08<br/>100 Papers"]
+        T9["Teacher 09<br/>100 Papers"]
+        T10["Teacher 10<br/>100 Papers"]
+    end
 
-↓
+    RESULT["~1 Hour"]
 
-1 Hour
+    PAPERS --> T1
+    PAPERS --> T2
+    PAPERS --> T3
+    PAPERS --> T4
+    PAPERS --> T5
+    PAPERS --> T6
+    PAPERS --> T7
+    PAPERS --> T8
+    PAPERS --> T9
+    PAPERS --> T10
+
+    T1 --> RESULT
+    T2 --> RESULT
+    T3 --> RESULT
+    T4 --> RESULT
+    T5 --> RESULT
+    T6 --> RESULT
+    T7 --> RESULT
+    T8 --> RESULT
+    T9 --> RESULT
+    T10 --> RESULT
+
+    classDef input fill:#E0F2FE,stroke:#0284C7,color:#082F49,stroke-width:2px
+    classDef worker fill:#EDE9FE,stroke:#7C3AED,color:#2E1065,stroke-width:2px
+    classDef result fill:#DCFCE7,stroke:#16A34A,color:#14532D,stroke-width:2px
+
+    class PAPERS input
+    class T1,T2,T3,T4,T5,T6,T7,T8,T9,T10 worker
+    class RESULT result
 ```
 
 The total work is unchanged, but the completion time is dramatically reduced.
@@ -284,12 +412,30 @@ Distributed computing answers:
 
 In a distributed system, tasks execute across multiple physical computers connected by a network.
 
-```
-+---------+     +---------+     +---------+
-| Node 1  |-----| Node 2  |-----| Node 3  |
-+---------+     +---------+     +---------+
+```mermaid
+flowchart TB
 
-         High-Speed Network
+    subgraph CLUSTER["Distributed Computing Environment"]
+        N1["Node 1"]
+        N2["Node 2"]
+        N3["Node 3"]
+
+        N1 --- N2
+        N2 --- N3
+        N1 --- N3
+    end
+
+    NET["High-Speed<br/>Network"]
+
+    N1 --- NET
+    N2 --- NET
+    N3 --- NET
+
+    classDef node fill:#EDE9FE,stroke:#7C3AED,color:#2E1065,stroke-width:2px
+    classDef network fill:#FCE7F3,stroke:#DB2777,color:#500724,stroke-width:2px
+
+    class N1,N2,N3 node
+    class NET network
 ```
 
 Each node performs part of the overall computation while coordinating with the others.
@@ -298,11 +444,11 @@ Each node performs part of the overall computation while coordinating with the o
 
 ## Parallel vs Distributed
 
-| Parallel Computing | Distributed Computing |
-|--------------------|-----------------------|
-| Focuses on executing tasks simultaneously | Focuses on using multiple physical machines |
-| May occur on one machine or many | Always spans multiple machines |
-| Reduces execution time | Increases scalability and resource availability |
+| Parallel Computing                        | Distributed Computing                           |
+| ----------------------------------------- | ----------------------------------------------- |
+| Focuses on executing tasks simultaneously | Focuses on using multiple physical machines     |
+| May occur on one machine or many          | Always spans multiple machines                  |
+| Reduces execution time                    | Increases scalability and resource availability |
 
 Modern HPC combines **both** approaches.
 
@@ -314,28 +460,38 @@ Modern HPC combines **both** approaches.
 
 Increase the capacity of a single server.
 
-```
-Server
+```mermaid
+flowchart TB
 
-↓
+    subgraph SERVER["Single Server"]
+        CPU["More CPU"]
+        RAM["More RAM"]
+        STORAGE["More Storage"]
+    end
 
-More CPU
+    CAPACITY["Greater<br/>Single-Node Capacity"]
 
-More RAM
+    CPU --> CAPACITY
+    RAM --> CAPACITY
+    STORAGE --> CAPACITY
 
-More Storage
+    classDef resource fill:#EDE9FE,stroke:#7C3AED,color:#2E1065,stroke-width:2px
+    classDef result fill:#DCFCE7,stroke:#16A34A,color:#14532D,stroke-width:2px
+
+    class CPU,RAM,STORAGE resource
+    class CAPACITY result
 ```
 
 Advantages:
 
-- Simpler administration.
-- No application redesign required.
+* Simpler administration.
+* No application redesign required.
 
 Limitations:
 
-- Hardware limits.
-- High cost.
-- Single point of failure.
+* Hardware limits.
+* High cost.
+* Single point of failure.
 
 ---
 
@@ -343,26 +499,42 @@ Limitations:
 
 Add additional servers.
 
-```
-Node 1
+```mermaid
+flowchart TB
 
-Node 2
+    subgraph CLUSTER["Horizontal Scaling"]
+        N1["Node 01"]
+        N2["Node 02"]
+        N3["Node 03"]
+        N4["Node 04"]
 
-Node 3
+        FABRIC["Cluster<br/>Interconnect"]
 
-Node 4
+        N1 <--> FABRIC
+        N2 <--> FABRIC
+        N3 <--> FABRIC
+        N4 <--> FABRIC
+    end
 
-↓
+    CAPACITY["Aggregate<br/>Cluster Capacity"]
 
-Cluster
+    FABRIC --> CAPACITY
+
+    classDef node fill:#E8F1FF,stroke:#2563EB,color:#172554,stroke-width:2px
+    classDef fabric fill:#FCE7F3,stroke:#DB2777,color:#500724,stroke-width:2px
+    classDef result fill:#DCFCE7,stroke:#16A34A,color:#14532D,stroke-width:2px
+
+    class N1,N2,N3,N4 node
+    class FABRIC fabric
+    class CAPACITY result
 ```
 
 Advantages:
 
-- Better scalability.
-- Incremental growth.
-- Improved resilience.
-- Higher aggregate performance.
+* Better scalability.
+* Incremental growth.
+* Improved resilience.
+* Higher aggregate performance.
 
 This is the architectural principle behind HPC clusters.
 
@@ -372,16 +544,16 @@ This is the architectural principle behind HPC clusters.
 
 A modern HPC system typically exhibits the following characteristics:
 
-| Characteristic | Description |
-|----------------|-------------|
-| Parallel Processing | Many tasks execute simultaneously. |
-| Distributed Resources | Compute is spread across multiple nodes. |
-| Low-Latency Network | Fast communication between nodes. |
-| Shared Storage | Data is accessible to all compute nodes. |
-| Centralized Scheduling | Jobs are managed by a workload manager. |
-| Scalability | New nodes can be added with minimal disruption. |
-| High Availability | Critical services minimize downtime. |
-| Automation | Provisioning and management are automated. |
+| Characteristic         | Description                                     |
+| ---------------------- | ----------------------------------------------- |
+| Parallel Processing    | Many tasks execute simultaneously.              |
+| Distributed Resources  | Compute is spread across multiple nodes.        |
+| Low-Latency Network    | Fast communication between nodes.               |
+| Shared Storage         | Data is accessible to all compute nodes.        |
+| Centralized Scheduling | Jobs are managed by a workload manager.         |
+| Scalability            | New nodes can be added with minimal disruption. |
+| High Availability      | Critical services minimize downtime.            |
+| Automation             | Provisioning and management are automated.      |
 
 ---
 
@@ -389,15 +561,15 @@ A modern HPC system typically exhibits the following characteristics:
 
 HPC supports a wide range of industries.
 
-| Industry | Example Workloads |
-|-----------|-------------------|
-| Scientific Research | Climate modeling, astrophysics, molecular dynamics |
-| Engineering | CFD, finite element analysis, crash simulation |
-| Healthcare | Genomics, protein folding, drug discovery |
-| Finance | Monte Carlo simulations, fraud detection, portfolio optimization |
-| Energy | Reservoir simulation, seismic imaging |
-| Manufacturing | Digital twins, product design optimization |
-| Artificial Intelligence | Deep learning, LLM training, recommendation systems |
+| Industry                | Example Workloads                                                |
+| ----------------------- | ---------------------------------------------------------------- |
+| Scientific Research     | Climate modeling, astrophysics, molecular dynamics               |
+| Engineering             | CFD, finite element analysis, crash simulation                   |
+| Healthcare              | Genomics, protein folding, drug discovery                        |
+| Finance                 | Monte Carlo simulations, fraud detection, portfolio optimization |
+| Energy                  | Reservoir simulation, seismic imaging                            |
+| Manufacturing           | Digital twins, product design optimization                       |
+| Artificial Intelligence | Deep learning, LLM training, recommendation systems              |
 
 The rapid growth of AI has significantly increased the demand for GPU-accelerated HPC infrastructure.
 
@@ -411,11 +583,11 @@ The rapid growth of AI has significantly increased the demand for GPU-accelerate
 
 # Best Practices
 
-- Focus on understanding concepts before memorizing commands.
-- Think in terms of systems rather than individual machines.
-- Always consider scalability when designing infrastructure.
-- Remember that network latency is often as important as raw CPU performance.
-- Develop a habit of documenting architectural decisions and operational procedures.
+* Focus on understanding concepts before memorizing commands.
+* Think in terms of systems rather than individual machines.
+* Always consider scalability when designing infrastructure.
+* Remember that network latency is often as important as raw CPU performance.
+* Develop a habit of documenting architectural decisions and operational procedures.
 
 ---
 
@@ -442,10 +614,10 @@ In this part, we established the foundation for understanding High Performance C
 
 Topics:
 
-- HPC vs Cloud Computing
-- HPC vs AI Infrastructure
-- AI Factory Concept
-- Evolution from CPU Clusters to GPU Clusters
-- Modern AI Workloads
-- Why NVIDIA Changed HPC Forever
-- The Rise of Foundation Models
+* HPC vs Cloud Computing
+* HPC vs AI Infrastructure
+* AI Factory Concept
+* Evolution from CPU Clusters to GPU Clusters
+* Modern AI Workloads
+* Why NVIDIA Changed HPC Forever
+* The Rise of Foundation Models
