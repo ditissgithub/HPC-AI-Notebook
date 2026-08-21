@@ -14,6 +14,7 @@
 * [17.10 Kernel Problems](#1710-kernel-problems)
 * [17.11 Production Checklist](#1711-production-checklist)
 * [17.12 Quick Revision](#1712-quick-revision)
+* [Bonus! HPC Performance Troubleshooting](#HPC-Performance-Troubleshooting-Right-Structure)
 
 ---
 
@@ -563,6 +564,10 @@ systemctl status <service>
 journalctl -u <service>
 dmesg -T
 ```
+# HPC Performance Troubleshooting Right Structure
+
+![Flow Diagram](../../images/Node_Bottleneck.png)
+
 
 > **HPC Engineer rule:** Never confuse **symptom** with **root cause**. A failed Slurm job, for example, may ultimately be caused by Linux memory pressure, Lustre I/O, InfiniBand connectivity, a GPU driver, or a node configuration problem.
 
