@@ -126,9 +126,10 @@ $ ibstat
 
 3. Check physical PCI layer connection
 $ lspci | grep -i mellanox
-```
 
-***Note: An InfiniBand Host Channel Adapter (HCA) is the internal network interface card, while an InfiniBand transceiver is the external optical plugin module that connects the HCA to a network cable***
+```
+*Note: An InfiniBand Host Channel Adapter (HCA) is the internal network interface card, while an InfiniBand transceiver is the external optical plugin module that connects the HCA to a network cable*
+
 ---
 
 ## InfiniBand Switch
