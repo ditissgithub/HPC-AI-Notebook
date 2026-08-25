@@ -300,6 +300,10 @@ Large AI models require continuous synchronization between GPUs across multiple 
 
 ---
 
+# 4.8 Infiniband UFM (Unified Fabric Manager)
+
+NVIDIA Unified Fabric Manager (UFM) is a host-based solution for managing InfiniBand fabrics. It provides fabric-wide visibility and management functions including subnet management, topology awareness, device management, performance monitoring, events, and APIs. NVIDIA describes the UFM Server as having complete visibility over the managed fabric and managing routing on fabric devices; a secondary UFM server can be deployed for HA.
+
 ## Production Note
 
 In many production HPC environments, administrators maintain **two separate networks**:
