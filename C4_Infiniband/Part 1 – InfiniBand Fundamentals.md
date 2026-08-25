@@ -115,6 +115,20 @@ Example hardware:
 
 - NVIDIA ConnectX Series
 
+```bash
+1. List active HCA devices
+$ ib_devices
+
+2. View detailed hardware and port status
+$ ibv_devinfo
+(or)
+$ ibstat
+
+3. Check physical PCI layer connection
+$ lspci | grep -i mellanox
+```
+
+Note: An InfiniBand Host Channel Adapter (HCA) is the internal network interface card, while an InfiniBand transceiver is the external optical plugin module that connects the HCA to a network cable
 ---
 
 ## InfiniBand Switch
