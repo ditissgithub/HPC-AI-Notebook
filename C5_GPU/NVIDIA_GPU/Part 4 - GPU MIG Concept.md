@@ -1,4 +1,4 @@
-# NVIDIA GPU MIG (Multi-Instance GPU) — Short Note
+# NVIDIA GPU MIG (Multi-Instance GPU) 
 
 ## 1. What is MIG?
 
